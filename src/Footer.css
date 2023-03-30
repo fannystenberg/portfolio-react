@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 48px 24px 48px 24px;
+}
+
+footer h2 {
+    font-family: 'Satoshi-Variable';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 78px;
+    text-align: center;
+    color: #EB5577;
+}
+
+.myProfileImg {
+    margin: 24px 0 12px 0;
+}
+
+.phoneAndMail {
+    font-family: 'Satoshi-Variable';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 48px 0 48px 0;
+}
+
+.contactMe {
+    display: flex;
+    margin-top: 12px;
+}

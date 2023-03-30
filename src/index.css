@@ -1,13 +1,46 @@
+@import url('./css/satoshi.css');
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0B24F5;
+  font-family: 'Satoshi-Variable';
+  font-style: normal;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0%   {transform: translateY(0);}
+  100% {transform: translateY(50px);}
+}
+
+.arrow {
+  font-size: 26px;
+  margin: 10px;
+}
+
+.scroll-text {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  width: fit-content;
 }
