@@ -16,6 +16,7 @@ code {
     monospace;
 }
 
+/* SCROLL */
 .scroll {
   display: flex;
   flex-direction: column;
@@ -43,4 +44,312 @@ code {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   width: fit-content;
+}
+
+/*** SECTION: TECH ***/
+.tech {
+  background-color: #EDFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 80px 0;
+}
+
+.tech h2 {
+  font-family: 'Satoshi-Variable';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 108px;
+  color: #0B24F5;
+}
+
+.tech p {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #000000;
+  margin: 24px;
+}
+
+.tech mark {
+  color: #FFFFFF;
+  padding: 2px;
+  gap: 8px;
+}
+
+.pink-bg-text {
+  background-color: #EB5577;
+}
+
+.blue-bg-text {
+  background-color: #0B24F5;
+}
+
+.light-blue-bg-text {
+  background-color: #2483E0;
+}
+
+/* RESPONSIVE DESIGN FOR SMALL MOBILES */
+@media (min-width: 320px) and (max-width: 374px) {
+  main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 6px;
+  }
+  .tech, .skills {
+      background-color: white;    
+  }
+}
+
+/* RESPONSIVE DESIGN FOR TABLET */
+@media (min-width: 667px) and (max-width: 1024px) {
+  .picture {
+      display: block;
+  }
+
+  .cover {
+      max-height: 412px;
+      width: 100%;
+      object-fit: cover;
+  }
+
+  .header-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+  }
+
+  .myProfilePic {
+      justify-content: end;
+  }
+
+  .nameAndTitle {
+      grid-column: 2 / span 2;;
+      
+  }
+
+  .introduction, .contact-me {
+      grid-column: 1 / span 3;
+      width: 80%;
+      margin-left: 100px
+  }
+
+  .scroll {
+      margin: 24px 24px 12px 24px;
+      padding: 0 30px 0 30px;
+  }
+
+  .tech {
+      padding: 140px 60px 140px 60px;
+  }
+
+  .tech h2 {
+      margin: 24px;
+  }
+
+  .tech p {
+      width: 75%;
+  }
+
+  .project {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .featured-projects img {
+      width: 184px;
+      height: 280px;
+      object-fit: cover;
+  }
+
+  .featured-projects p {
+      max-width: 80%;
+      margin: 24px 0 24px 0;
+  }
+
+  .featured-projects button {
+      display: inline;
+  }
+
+  .skills-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      margin: 0 48px 0 48px;
+  }
+
+  footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  footer h2 {
+      font-weight: 900;
+      font-size: 120px;
+      line-height: 162px;
+  }
+
+  .myProfileImg {
+      margin: 16px;
+  }
+
+  .about-me {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 24px;
+  }
+
+  .phoneAndMail {
+      margin: 48px;
+  }
+
+  .contactMe {
+      display: flex;
+      margin: 48px;
+  }
+}
+
+/* RESPONSIVE DESIGN FOR DESKTOP */
+@media (min-width: 1024px) {
+  header {
+      display: flex;
+      flex-direction: row-reverse;
+      height: 920px;
+      align-items: center;
+  }
+
+  .picture {
+      display: flex;
+      max-width: 100%;
+      min-width: 50%;
+      min-height: 100%;
+  }
+
+  .cover {
+      object-fit: none;
+      object-position: right 0%;
+      width: 100%;
+      filter: brightness(50%);
+  }
+
+  .header-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+  }
+
+  .myProfilePic {
+      justify-content: end;
+  }
+
+  .nameAndTitle {
+      grid-column: 2 / span 2;
+  }
+
+  .introduction, .contact-me {
+      grid-column: 1 / span 3;
+      width: 80%;
+      margin-left: 100px
+  }
+
+  .scroll {
+      position: absolute;
+      left: 51%;
+      top: 85%;
+      margin-left: -50px;
+      margin-top: -50px;
+  }
+
+  .tech {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 180px 90px 180px 90px;
+  }
+
+  .tech h2 {
+      margin: 24px;
+  }
+
+  .tech p {
+      width: 75%;
+  }
+
+  .featured-projects {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+  }
+
+  .project {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .featured-projects button {
+      display: inline;
+  }
+
+  .skills-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      margin: 0 48px 0 48px;
+  }
+
+  footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 62px 0 62px 0;
+  }
+
+  footer h2 {
+      font-weight: 900;
+      font-size: 120px;
+      line-height: 162px;
+  }
+
+  .myProfileImg {
+      margin: 16px;
+  }
+
+  .about-me {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 24px;
+  }
+
+  .phoneAndMail {
+      margin: 48px;
+  }
+
+  .contactMe {
+      display: flex;
+      margin: 48px;
+  }
 }

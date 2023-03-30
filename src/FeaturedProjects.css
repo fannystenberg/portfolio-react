@@ -1,0 +1,78 @@
+.featured-projects {
+    margin-left: 24px;
+}
+.projectPicture {
+    margin: 24px 24px 24px 0;
+}
+
+.project {
+    margin-top: 24px;
+}
+
+.featured-projects h2, h3 {
+    font-family: 'Satoshi-Variable';
+    font-style: normal;
+}
+
+.featured-projects h2 {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 80px;
+    color: #0B24F5;
+    margin: 24px 24px 24px 0;
+}
+
+.featured-projects h3 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43px;
+    color: #000000;
+}
+
+.featured-projects p {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
+    margin: 24px 24px 24px 0;
+}
+
+.featured-projects li {
+    display: inline;
+    padding: 3px;
+    background-color: #000000;
+    color: #ffff;
+    font-family: 'Satoshi-Variable';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.featured-projects button {
+    display: block;
+    margin: 12px 0px 12px 0;
+    background-color: #F5F5F5;
+    border-radius: 40px;
+    border: none;
+    padding: 12px;
+    font-family: 'Satoshi-Variable';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #333333;
+}
+
+.view-code:hover {
+    background-color:#EB5577;
+    color: white;
+}
+
+.live-demo:hover {
+    background-color: #0B24F5;
+    color:white;
+}

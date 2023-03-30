@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from 'components/Header';
+import FeaturedProjects from 'components/FeaturedProjects';
 import Footer from 'components/Footer';
 
 export const App = () => {
@@ -11,8 +12,19 @@ export const App = () => {
         <p className="scroll-text">Lets scroll</p>
       </div>
       <main>
-        Find me in src/app.js!
+        <section lang="en-US" className="tech" title="Information about tech-stack" aria-label="Information about tech-stack">
+          <h2>Tech</h2>
+          <p>
+            HTML, CSS, Flexbox, <mark className="pink-bg-text">JavaScript,</mark> ES6, JSX,
+            <mark className="blue-bg-text">React,</mark> React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s,
+            <mark className="light-blue-bg-text">mob-programming,</mark> pair-programming, Github.
+          </p>
+        </section>
+        <FeaturedProjects />
       </main>
+      <aside>
+        Skills
+      </aside>
       <Footer />
     </>
   )
