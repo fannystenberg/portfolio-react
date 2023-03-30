@@ -1,7 +1,3 @@
-.picture { /* This hides the cover-image on mobile */
-    display: none;
-}
-
 .header-container {
     margin-left: 24px;
 }

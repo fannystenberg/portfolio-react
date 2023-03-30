@@ -16,6 +16,10 @@ code {
     monospace;
 }
 
+.picture { /* This hides the cover-image on mobile */
+    display: none;
+}
+
 /* SCROLL */
 .scroll {
   display: flex;
