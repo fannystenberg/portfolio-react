@@ -20,7 +20,7 @@ code {
 }
 /* Scroll to top button*/
 .top-button {
-    display: none;
+    display: block;
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -34,6 +34,10 @@ code {
     border: none;
     outline: none;
     opacity: 0.7;
+  }
+
+  .hideTopBtn {
+    display: none;
   }
   
   .top-button:hover {

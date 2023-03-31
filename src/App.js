@@ -4,6 +4,7 @@ import FeaturedProjects from 'components/FeaturedProjects';
 import Footer from 'components/Footer';
 import Tech from 'components/Tech';
 import Skills from 'components/Skills';
+import ScrollBtn from 'components/ScrollBtn';
 
 export const App = () => {
   return (
@@ -85,6 +86,7 @@ export const App = () => {
       </main>
       <Skills />
       <Footer />
+      <ScrollBtn />
     </>
   )
 }
