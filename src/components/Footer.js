@@ -18,7 +18,7 @@ const Footer = () => {
         <p>+46(0) 767 16 47 19</p>
         <p>ffannystenberg@gmail.com</p>
       </div>
-      <div className="contact-me">
+      <div className="contactMe">
         <a hrefLang="en-US" className="icon" title="link to Fanny's Linked In page" href="https://www.linkedin.com/in/fanny-stenberg/" target="_blank" rel="noreferrer">
           <i aria-hidden="true" className="fab fa-linkedin-in" />
         </a>

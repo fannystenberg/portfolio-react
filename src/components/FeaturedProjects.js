@@ -1,6 +1,8 @@
 import React from 'react';
 
-const FeaturedProjects = ({ imgSrc, title, description, githubLink, netlifyLink }) => {
+const FeaturedProjects = (
+  { imgSrc, title, description, language1, language2, language3, githubLink, netlifyLink }
+) => {
   return (
     <div lang="en-US" className="project">
       <div className="projectPicture" aria-hidden="true">
@@ -10,11 +12,12 @@ const FeaturedProjects = ({ imgSrc, title, description, githubLink, netlifyLink 
         <h3 lang="en">{title}</h3>
         <p lang="en">{description}</p>
         <ul lang="en" className="project-languages" aria-label="Coding languages used in this project">
-          <li lang="en">HTML</li>
-          <li lang="en">CSS</li>
-          <li lang="en">JavaScript</li>
-          <li lang="en">React</li>
-          <li lang="en">JSX</li>
+          <li lang="en" className="showList">HTML</li>
+          <li lang="en" className="showList">CSS</li>
+          <li lang="en" className="showList">JavaScript</li>
+          <li lang="en" className={language1.length <= 2 ? 'hideList' : 'showList'}>{language1}</li>
+          <li lang="en" className={language2.length <= 2 ? 'hideList' : 'showList'}>{language2}</li>
+          <li lang="en" className={language3.length <= 2 ? 'hideList' : 'showList'}>{language3}</li>
         </ul>
         <button
           lang="en"

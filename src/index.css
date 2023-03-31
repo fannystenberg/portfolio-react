@@ -221,8 +221,7 @@ code {
     color: #000000;
     margin: 24px 24px 24px 0;
 }
-
-.featured-projects li {
+.showList {
     display: inline;
     padding: 3px;
     margin: 0 2px;
@@ -234,6 +233,10 @@ code {
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
+}
+
+.hideList {
+    display: none;
 }
 
 .featured-projects button {
@@ -261,6 +264,7 @@ code {
     color:white;
 }
 
+/* SKILLS COMPONENT */
 .skills {
     background-color: #FDF2E4;
     font-family: 'Satoshi-Variable';
@@ -320,6 +324,7 @@ code {
     background-color: #6DB486;
 }
 
+/* FOOTER COMPONENT */
 footer {
     display: flex;
     flex-direction: column;
@@ -396,7 +401,7 @@ footer h2 {
     }
 
     .nameAndTitle {
-        grid-column: 2 / span 2;;
+        grid-column: 2 / span 2;
         
     }
 
@@ -442,6 +447,7 @@ footer h2 {
 
     .featured-projects button {
         display: inline;
+        margin-right: 5px;
     }
 
     .skills-container {
@@ -572,6 +578,7 @@ footer h2 {
 
     .featured-projects button {
         display: inline;
+        margin-right: 5px;
     }
 
     .skills-container {
