@@ -8,7 +8,7 @@ const FeaturedProjectsList = () => {
       <FeaturedProjects
         imgSrc="../images/todo.png"
         title="ToDo App"
-        description="Designed and built a to-do app with Redux by creating slices, reducers and actions from scratch."
+        description="Designed and built a to-do app with Redux by creating slices, reducers and actions from scratch. I also used Material UI for the first time."
         language1="React"
         language2="JSX"
         language3="Redux"
