@@ -185,46 +185,6 @@ code {
   }
 
 /*** SECTION: FEATURED PROJECTS ***/
-.featured-projects {
-    margin-left: 24px;
-}
-.projectPicture {
-    margin: 24px 24px 24px 0;
-}
-
-.project {
-    margin-top: 24px;
-}
-
-.featured-projects h2, h3 {
-    font-family: 'Satoshi-Variable';
-    font-style: normal;
-}
-
-.featured-projects h2 {
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 80px;
-    color: #0B24F5;
-    margin: 24px 24px 24px 0;
-}
-
-.featured-projects h3 {
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 43px;
-    color: #000000;
-}
-
-.featured-projects p {
-    font-family: 'EB Garamond';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 29px;
-    color: #000000;
-    margin: 24px 24px 24px 0;
-}
 .showList {
     display: inline;
     padding: 3px;
@@ -241,31 +201,6 @@ code {
 
 .hideList {
     display: none;
-}
-
-.featured-projects button {
-    display: block;
-    margin: 12px 0px 12px 0;
-    background-color: #F5F5F5;
-    border-radius: 40px;
-    border: none;
-    padding: 12px;
-    font-family: 'Satoshi-Variable';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    color: #333333;
-}
-
-.view-code:hover {
-    background-color:#EB5577;
-    color: white;
-}
-
-.live-demo:hover {
-    background-color: #0B24F5;
-    color:white;
 }
 
 /* SKILLS COMPONENT */
@@ -432,28 +367,6 @@ footer h2 {
         width: 75%;
     }
 
-    .project {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .featured-projects img {
-        width: 184px;
-        height: 280px;
-        object-fit: cover;
-    }
-
-    .featured-projects p {
-        max-width: 80%;
-        margin: 24px 0 24px 0;
-    }
-
-    .featured-projects button {
-        display: inline;
-        margin-right: 5px;
-    }
-
     .skills-container {
         display: flex;
         flex-direction: row;
@@ -564,20 +477,6 @@ footer h2 {
 
     .tech p {
         width: 75%;
-    }
-
-    .featured-projects {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .project {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
     }
 
     .featured-projects button {
