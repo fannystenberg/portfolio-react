@@ -7,17 +7,33 @@ const Projects = [
     imageSrc: '../images/todo.png',
     title: 'ToDo App',
     description: 'Designed and built a to-do app with Redux by creating slices, reducers and actions from scratch. I also used Material UI for the first time.',
-    language: ['React', 'JSX', 'Redux'],
+    languages: ['HTML', 'CSS', 'JavaScript', 'React', 'JSX', 'Redux'],
     githubLink: 'project-todos',
     netlifyLink: 'todo-app-byfanny'
   },
   {
     imageSrc: '../images/quiz.png',
     title: 'Redux Quiz',
-    description: 'Created a multiple-choice quiz with Redux, the assignment was to interact with the store using selectors and dispatching actions. This was my first project in Redux',
-    language: ['React', 'JSX', 'Redux'],
+    description: 'Created a multiple-choice quiz with Redux, the assignment was to interact with the store using selectors and dispatching actions. This was my first project in Redux.',
+    languages: ['HTML', 'CSS', 'JavaScript', 'React', 'JSX', 'Redux'],
     githubLink: 'project-redux-quiz',
     netlifyLink: 'neon-souffle-d2a8b2'
+  },
+  {
+    imageSrc: '../images/ux-design.png',
+    title: 'Collab with UX-designer',
+    description: 'I was given a design hand-off from UX-design student Linnéa Rådahl. The assignment was to transform that design into code with React.',
+    languages: ['HTML', 'CSS', 'JavaScript', 'React', 'JSX', 'Redux'],
+    githubLink: 'project-design-handoff',
+    netlifyLink: 'fictious-gym-developedbyfanny'
+  },
+  {
+    imageSrc: '../images/movies.png',
+    title: 'Movies',
+    description: 'Created a movie site with multiple pages using React Router and APIs combining useState with useEffect.',
+    languages: ['HTML', 'CSS', 'JavaScript', 'React', 'JSX', 'Redux', 'Pair-programming'],
+    githubLink: 'project-movies',
+    netlifyLink: 'movie-releases-by-fanny-and-fiona'
   }
 ];
 
@@ -32,31 +48,13 @@ const FeaturedProjectsList = () => {
             imgSrc={project.imageSrc}
             title={project.title}
             description={project.description}
-            language1="React"
-            language2="JSX"
-            language3="no"
+            languages={project.languages.map(
+              (language) => <Language key={language}>{language}</Language>
+            )}
             githubLink={project.githubLink}
             netlifyLink={project.netlifyLink} />
         )
       })}
-      <FeaturedProject
-        imgSrc="../images/ux-design.png"
-        title="Collab with UX-designer"
-        description="I was given a design hand-off from UX-design student Linnéa Rådahl. The assignment was to transform that design into code with React."
-        language1="React"
-        language2="JSX"
-        language3="no"
-        githubLink="project-design-handoff"
-        netlifyLink="fictious-gym-developedbyfanny" />
-      <FeaturedProject
-        imgSrc="../images/movies.png"
-        title="Movies"
-        description="Created a movie site with multiple pages using React Router and APIs combining useState with useEffect."
-        language1="React"
-        language2="JSX"
-        language3="Pair-programming"
-        githubLink="project-movies"
-        netlifyLink="movie-releases-by-fanny-and-fiona" />
       <FeaturedProject
         imgSrc="../images/happy-thoughts.png"
         title="Happy Thoughts"
@@ -137,4 +135,18 @@ export const SectionHeader = styled.h2`
   line-height: 80px;
   color: #0B24F5;
   margin: 24px 24px 24px 0;
+`;
+
+export const Language = styled.li`
+  display: inline;
+  padding: 3px;
+  margin: 0 2px;
+  background-color: #000000;
+  color: #ffff;
+  font-family: 'Satoshi-Variable';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
 `;

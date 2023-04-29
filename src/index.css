@@ -184,25 +184,6 @@ code {
     background-color: #2483E0;
   }
 
-/*** SECTION: FEATURED PROJECTS ***/
-.showList {
-    display: inline;
-    padding: 3px;
-    margin: 0 2px;
-    background-color: #000000;
-    color: #ffff;
-    font-family: 'Satoshi-Variable';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-.hideList {
-    display: none;
-}
-
 /* SKILLS COMPONENT */
 .skills {
     background-color: #FDF2E4;

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FeaturedProject = (
-  { imgSrc, title, description, language1, language2, language3, githubLink, netlifyLink }
+  { imgSrc, title, description, languages, githubLink, netlifyLink }
 ) => {
   return (
     <ProjectWrapper lang="en-US" className="project">
@@ -13,12 +13,7 @@ const FeaturedProject = (
         <ProjectTitle lang="en">{title}</ProjectTitle>
         <ProjectDescription lang="en">{description}</ProjectDescription>
         <ProjectLanguages lang="en" aria-label="Coding languages used in this project">
-          <li lang="en" className="showList">HTML</li>
-          <li lang="en" className="showList">CSS</li>
-          <li lang="en" className="showList">JavaScript</li>
-          <li lang="en" className={language1.length <= 2 ? 'hideList' : 'showList'}>{language1}</li>
-          <li lang="en" className={language2.length <= 2 ? 'hideList' : 'showList'}>{language2}</li>
-          <li lang="en" className={language3.length <= 2 ? 'hideList' : 'showList'}>{language3}</li>
+          {languages}
         </ProjectLanguages>
         <Button
           btnColor="#EB5577"
