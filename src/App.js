@@ -4,7 +4,7 @@ import Footer from 'components/Footer';
 import Tech from 'components/Tech';
 import Skills from 'components/Skills';
 import ScrollBtn from 'components/ScrollBtn';
-import FeaturedProjectsList from 'components/FeaturedProjectsList';
+import FeaturedProjectList from 'components/Projects/FeaturedProjectList';
 
 export const App = () => {
   return (
@@ -16,7 +16,7 @@ export const App = () => {
       </div>
       <main>
         <Tech />
-        <FeaturedProjectsList />
+        <FeaturedProjectList />
       </main>
       <Skills />
       <Footer />

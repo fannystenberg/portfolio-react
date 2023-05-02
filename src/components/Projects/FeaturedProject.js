@@ -5,7 +5,7 @@ const FeaturedProject = (
   { imgSrc, title, description, languages, githubLink, netlifyLink }
 ) => {
   return (
-    <ProjectWrapper lang="en-US" className="project">
+    <ProjectWrapper lang="en-US">
       <ImageWrapper aria-hidden="true">
         <ProjectImage src={imgSrc} alt="" />
       </ImageWrapper>
@@ -21,7 +21,7 @@ const FeaturedProject = (
           type="button"
           title="link to project on Github"
           onClick={() => window.open(`https://github.com/fannystenberg/${githubLink}`)}>
-          <span><i aria-hidden="true" className="fab fa-github" /></span>
+          <span aria-hidden="true"><i className="fab fa-github" /></span>
             View the code
         </Button>
         <Button
@@ -30,7 +30,7 @@ const FeaturedProject = (
           type="button"
           title="link to project on Netlify"
           onClick={() => window.open(`https://${netlifyLink}.netlify.app/`)}>
-          <span><i aria-hidden="true" className="fa-solid fa-globe" /></span>
+          <span aria-hidden="true"><i className="fa-solid fa-globe" /></span>
             Live demo
         </Button>
       </ProjectInfo>
@@ -39,7 +39,7 @@ const FeaturedProject = (
 };
 export default FeaturedProject;
 
-export const ProjectWrapper = styled.div`
+export const ProjectWrapper = styled.article`
   margin-top: 24px;
 
   @media (min-width: 667px) and (max-width: 1024px) {
