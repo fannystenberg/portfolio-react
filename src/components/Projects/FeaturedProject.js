@@ -21,8 +21,8 @@ const FeaturedProject = (
           type="button"
           title="link to project on Github"
           onClick={() => window.open(`https://github.com/fannystenberg/${githubLink}`)}>
-          <span aria-hidden="true"><i className="fab fa-github" /></span>
-            View the code
+          <span aria-hidden="true"><i className="fab fa-github" /> </span>
+            View code
         </Button>
         <Button
           btnColor="#0B24F5"
@@ -30,7 +30,7 @@ const FeaturedProject = (
           type="button"
           title="link to project on Netlify"
           onClick={() => window.open(`https://${netlifyLink}.netlify.app/`)}>
-          <span aria-hidden="true"><i className="fa-solid fa-globe" /></span>
+          <span aria-hidden="true"><i className="fa-solid fa-globe" /> </span>
             Live demo
         </Button>
       </ProjectInfo>
