@@ -13,12 +13,14 @@ const Skills = () => {
             <li lang="en">JavaScript</li>
             <li lang="en">React</li>
             <li lang="en">JSX</li>
+            <li lang="en">Redux</li>
           </ul>
         </div>
         <div lang="en-US" className="Toolbox">
           <h3 className="h3-toolbox">Toolbox</h3>
           <ul lang="en" className="toolbox-list">
             <li lang="en">Visual Studio Code</li>
+            <li lang="en">Postman</li>
             <li lang="en">Github</li>
             <li lang="en">Figma</li>
             <li lang="en">Slack</li>
@@ -40,7 +42,8 @@ const Skills = () => {
         <div lang="en-US" className="Upcoming">
           <h3 className="h3-upcoming">Upcoming</h3>
           <ul lang="en" className="upcoming-list">
-            <li lang="en">Redux</li>
+            <li lang="en">MongoDB</li>
+            <li lang="en">Express.js</li>
             <li lang="en">Node.js</li>
           </ul>
         </div>
