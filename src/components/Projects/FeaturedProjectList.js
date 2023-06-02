@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Projects } from './Projects.js';
 import FeaturedProject from './FeaturedProject.js';
+import Pagination from './Pagination.js';
 
 const FeaturedProjectList = () => {
+  const [posts, setPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(4);
+
+  useEffect(() => {
+    setPosts(Projects);
+  }, []);
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <Section lang="en-US" title="List of Fanny's featured projects">
       <SectionHeader lang="en">Featured Projects</SectionHeader>
-      {Projects.map((project) => {
+      {currentPosts.map((project) => {
         return (
           <FeaturedProject
             key={project.imageSrc}
@@ -21,6 +36,10 @@ const FeaturedProjectList = () => {
             netlifyLink={project.netlifyLink} />
         )
       })}
+      <Pagination
+        postsPerPage={postsPerPage}
+        totalPosts={posts.length}
+        paginate={paginate} />
     </Section>
   )
 };

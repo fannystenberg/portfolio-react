@@ -1,9 +1,17 @@
 export const Projects = [
   {
+    imageSrc: '../images/labyrinth.png',
+    title: 'Labyrinth game',
+    description: 'Designed and created a text-based labyrinth game using redux store and thunks to manage API calls.',
+    languages: ['JavaScript', 'React', 'JSX', 'Redux', 'Styled components', 'Pair-programming'],
+    githubLink: 'project-labyrinth',
+    netlifyLink: 'maze-by-fanny-and-bridget'
+  },
+  {
     imageSrc: '../images/todo.png',
     title: 'ToDo App',
     description: 'Designed and built a to-do app with Redux by creating slices, reducers and actions from scratch. I also used Material UI for the first time.',
-    languages: ['HTML', 'CSS', 'JavaScript', 'React', 'JSX', 'Redux'],
+    languages: ['JavaScript', 'React', 'JSX', 'Redux', 'Material UI'],
     githubLink: 'project-todos',
     netlifyLink: 'todo-app-byfanny'
   },
@@ -11,7 +19,7 @@ export const Projects = [
     imageSrc: '../images/quiz.png',
     title: 'Redux Quiz',
     description: 'Created a multiple-choice quiz with Redux, the assignment was to interact with the store using selectors and dispatching actions. This was my first project in Redux.',
-    languages: ['HTML', 'CSS', 'JavaScript', 'React', 'JSX', 'Redux'],
+    languages: ['JavaScript', 'React', 'JSX', 'Redux', 'Styled components'],
     githubLink: 'project-redux-quiz',
     netlifyLink: 'neon-souffle-d2a8b2'
   },
@@ -19,7 +27,7 @@ export const Projects = [
     imageSrc: '../images/ux-design.png',
     title: 'Collab with UX-designer',
     description: 'I was given a design hand-off from UX-design student Linnéa Rådahl. The assignment was to transform that design into code with React.',
-    languages: ['HTML', 'CSS', 'JavaScript', 'React', 'JSX'],
+    languages: ['HTML', 'CSS', 'JavaScript', 'React', 'JSX', 'Styled components'],
     githubLink: 'project-design-handoff',
     netlifyLink: 'fictious-gym-developedbyfanny'
   },
